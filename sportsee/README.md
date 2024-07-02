@@ -73,6 +73,8 @@ sportsee/
 │   │   └── verticalNavbar.js
 │   ├── hooks/
 │   │   └── useUserData.js
+│   ├── models/
+│   │   └── modelUser.js
 │   ├── services/
 │   │   └── api.js
 │   ├── App.js
