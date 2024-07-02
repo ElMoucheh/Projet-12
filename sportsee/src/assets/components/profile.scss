@@ -1,102 +1,99 @@
 @import "../constants/colors.scss";
 
-.loading {
-    width: 100%;
-    height: 100%;
+#profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  overflow: hidden;  // Assurez-vous que le conteneur principal n'entraîne pas de débordement
+
+  .header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    p {
-      font-size: 45px;
-      color: $black;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    h1, span {
+      font-size: 48px;
       font-family: "Roboto", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 500;
+      font-weight: 600;
       font-style: normal;
-  
-      &::after {
-        content: '';
-        display: inline-block;
-        animation: ellipsis 2s infinite;
-      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: $calories;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
     }
   }
 
-#profile{
+  .container {
+    height: calc(100% - 150px); // Ajustez cette valeur pour qu'elle corresponde à la hauteur de la section header
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 60px 100px;
+    flex-direction: row;
+    gap: 20px;
 
-    .header{
+    .wrapper-left {
+      flex: 3;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .wrap-activity {
+        height: 55%;  // 55% de la hauteur totale
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+      }
 
-        h1, span{
-            font-size: 48px;
-            font-family: "Roboto", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: normal;
-        }
-
-        h1{
-            margin-bottom: 20px;
-        }
-        
-        span{
-            color: $calories;
-        }
-
-        p{
-            font-family: "Roboto", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-    }
-
-    .container{
-        height: 100%;
-        width: 100%;
+      .wrap {
+        height: 45%;  // 45% de la hauteur totale
         display: flex;
         flex-direction: row;
         gap: 20px;
 
-        .wrapper_left{
-            flex: 3;
-            gap: 20px;
-            display: flex;
-            flex-direction: column;
-
+        .chart-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
         }
-
-        .wrapper_right{
-            flex: 1;
-            gap: 20px;
-            display: flex;
-            flex-direction: column;
-        }
+      }
     }
+
+    .wrapper-right {
+      flex: 1;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 @keyframes ellipsis {
-    0% {
-      content: '';
-    }
-    25% {
-      content: '.';
-    }
-    50% {
-      content: '..';
-    }
-    75% {
-      content: '...';
-    }
-    100% {
-      content: '';
-    }
+  0% {
+    content: '';
   }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { User, ActivitySession, AverageSession, Performance } from '../models/modelUser';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 export const fetchUserData = async (userId) => {
   const response = await axios.get(`${BASE_URL}/user/${userId}`);
