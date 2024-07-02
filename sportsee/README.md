@@ -28,17 +28,6 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
     yarn install
     ```
 
-## Configuration
-### Variables d'environnement
-
-
-> [!IMPORTANT]
-> Créez un fichier .env à la racine du projet et ajoutez les variables suivantes :
-
-    ```bash
-    REACT_API_URL=http://localhost:3000
-    ```
-
 ## Exécution
 
 Pour démarrer l'application en mode développement :
