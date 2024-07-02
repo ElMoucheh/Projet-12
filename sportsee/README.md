@@ -52,7 +52,7 @@ Pour démarrer l'application en mode développement :
 L'application sera accessible à l'adresse http://localhost:3001.
 
 ## Structure du Projet
-
+```bash
 sportsee/
 │
 ├── public/
@@ -82,3 +82,4 @@ sportsee/
 │       ├── profile.scss
 │       └── ... autres fichiers de style
 └── package.json
+```
