@@ -1,5 +1,3 @@
-// src/models/models.js
-
 class User {
   constructor(id, userInfos, todayScore, keyData) {
     this.id = id;

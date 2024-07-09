@@ -10,9 +10,6 @@ import { User, ActivitySession, AverageSession, Performance } from '../models/mo
 const USE_MOCK = process.env.REACT_APP_USE_MOCK === 'true';
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
-console.log('USE_MOCK:', USE_MOCK); // Ajoutez ceci pour vérifier la valeur
-console.log('BASE_URL:', BASE_URL); // Ajoutez ceci pour vérifier la valeur
-
 export const fetchUserData = async (userId) => {
   if (USE_MOCK) {
     const { id, userInfos, todayScore, keyData } = mockUserData;

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   padding: 50px 100px;
-  overflow: hidden;  // Assurez-vous que le conteneur principal n'entraîne pas de débordement
+  overflow: hidden;
 
   .header {
     display: flex;
@@ -38,7 +38,7 @@
   }
 
   .container {
-    height: calc(100% - 150px); // Ajustez cette valeur pour qu'elle corresponde à la hauteur de la section header
+    height: calc(100% - 150px);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -51,13 +51,13 @@
       flex-direction: column;
 
       .wrap-activity {
-        height: 55%;  // 55% de la hauteur totale
+        height: 55%;
         display: flex;
         flex-direction: column;
       }
 
       .wrap {
-        height: 45%;  // 45% de la hauteur totale
+        height: 45%;
         display: flex;
         flex-direction: row;
         gap: 20px;

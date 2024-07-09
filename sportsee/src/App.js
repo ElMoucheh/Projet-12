@@ -1,4 +1,3 @@
-// src/app.js
 import React from 'react';
 import Profile from './components/profile';
 import HorizontalNavbar from './components/horizontalNavbar';
