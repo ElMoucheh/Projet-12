@@ -62,6 +62,8 @@ sportsee/
 │   │   └── verticalNavbar.js
 │   ├── hooks/
 │   │   └── useUserData.js
+│   ├── mocks/
+│   │   └── mockData.js
 │   ├── models/
 │   │   └── modelUser.js
 │   ├── services/
