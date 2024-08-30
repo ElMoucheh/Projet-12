@@ -8,7 +8,7 @@ function App() {
   const userId = 12;
 
   return (
-    <div className="main">
+    <div className="main ">
       <HorizontalNavbar />
       <div className='main-core'>
         <VerticalNavbar/>
