@@ -6,6 +6,7 @@ const useUserData = (userId) => {
   const [activityData, setActivityData] = useState([]);
   const [averageSessions, setAverageSessions] = useState([]);
   const [performanceData, setPerformanceData] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,14 +20,14 @@ const useUserData = (userId) => {
         setAverageSessions(averageSessions);
         setPerformanceData(performance);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        setError(error.message);
       }
     };
 
     fetchData();
   }, [userId]);
 
-  return { userData, activityData, averageSessions, performanceData };
+  return { userData, activityData, averageSessions, performanceData, error };
 };
 
 export default useUserData;

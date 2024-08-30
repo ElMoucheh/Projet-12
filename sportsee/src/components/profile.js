@@ -9,7 +9,11 @@ import ScoreChart from './scoreChart';
 import CardInfo from './cardInfo';
 
 const Profile = ({ userId }) => {
-  const { userData, activityData, averageSessions, performanceData } = useUserData(userId);
+  const { userData, activityData, averageSessions, performanceData, error } = useUserData(userId);
+
+  if (error) {
+    return <div className="error"><p>Nos services sont momentanément indisponibles</p></div>;
+  }
 
   if (!userData) {
     return <div className='loading'>
