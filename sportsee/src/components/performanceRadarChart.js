@@ -4,12 +4,12 @@ import '../assets/components/performanceRadarChart.scss';
 
 const PerformanceRadarChart = ({ data }) => {
   const kindLabels = {
-    1: 'Cardio',
-    2: 'Energie',
-    3: 'Endurance',
-    4: 'Force',
-    5: 'Vitesse',
-    6: 'Intensité'
+    1: 'Intensité',
+    2: 'Vitesse',
+    3: 'Force',
+    4: 'Endurance',
+    5: 'Energie',
+    6: 'Cardio'
   };
 
   const formattedData = data.map(item => ({

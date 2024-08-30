@@ -55,6 +55,11 @@
             color: $font-light-grey;
         }
     }
+}
 
-  }
+@media (max-width: 1024px) and (max-height: 780px) {
+    .card-info{
+        padding: 16px;
+    }
+}
   

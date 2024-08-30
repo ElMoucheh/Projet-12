@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 1;
     
     ul {
         display: flex;
